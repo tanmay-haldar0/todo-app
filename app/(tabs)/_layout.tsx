@@ -14,8 +14,8 @@ const TabsLayout = () => {
                     backgroundColor:colors.bg,
                     borderTopWidth:0.5,
                     borderTopColor:colors.border,
-                    height:80,
-                    paddingBottom:30,
+                    height:70,
+                    paddingBottom:20,
                     paddingTop:10,
                     elevation: 0,
                     shadowOpacity: 0,
@@ -25,12 +25,13 @@ const TabsLayout = () => {
                     fontWeight:600
                 },
                 headerShown:false,
+                tabBarHideOnKeyboard: true,
             }}
         >
             <Tabs.Screen name='index' options={{
                 title: "Todos",
                 tabBarIcon: ({ color, size }) => (
-                    <Ionicons name='flash-outline' size={size} color={color}/>
+                    <Ionicons name='document-text' size={size} color={color}/>
                 )
             }}  />
             <Tabs.Screen name='settings' options={{
